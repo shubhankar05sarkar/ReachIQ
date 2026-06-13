@@ -14,7 +14,7 @@ function Customers() {
     const fetchCustomers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/customers"
+          "https://reachiq-backend-6r8b.onrender.com/api/customers"
         );
 
         setCustomers(response.data.data);

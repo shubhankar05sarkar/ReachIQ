@@ -39,7 +39,7 @@ function Campaigns() {
       setSuccessMessage("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/generate-message",
+        "https://reachiq-backend-6r8b.onrender.com/api/ai/generate-message",
         {
           goal: campaignGoal,
           segment: selectedSegment,
@@ -87,7 +87,7 @@ function Campaigns() {
       setSuccessMessage("");
 
       await axios.post(
-        "http://localhost:5000/api/campaigns",
+        "https://reachiq-backend-6r8b.onrender.com/api/campaigns",
         {
           segment: selectedSegment,
           channel: selectedChannel,

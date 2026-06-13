@@ -20,7 +20,7 @@ function Segments() {
     const fetchSegments = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/segments"
+          "https://reachiq-backend-6r8b.onrender.com/api/segments"
         );
 
         setSegments(response.data.data);
@@ -41,7 +41,7 @@ function Segments() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/generate-segment",
+        "https://reachiq-backend-6r8b.onrender.com/api/ai/generate-segment",
         {
           prompt,
         }

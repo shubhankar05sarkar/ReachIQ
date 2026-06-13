@@ -18,7 +18,7 @@ function Dashboard() {
     const fetchDashboard = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/dashboard"
+          "https://reachiq-backend-6r8b.onrender.com/api/dashboard"
         );
 
         setStats(response.data.data);

@@ -17,7 +17,7 @@ function Analytics() {
   const fetchEvents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/events"
+        "https://reachiq-backend-6r8b.onrender.com/api/events"
       );
 
       setEvents(response.data.data);
