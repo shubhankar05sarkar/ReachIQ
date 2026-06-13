@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(
 
 const generateCampaignMessage = async (goal, segment, channel) => {
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash-lite",
+    model: "gemini-3.1-flash-lite",
   });
 
   const prompt = `
@@ -71,7 +71,7 @@ Use generic values instead.
 
 const generateSegmentSuggestion = async (prompt) => {
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash-lite",
+    model: "gemini-3.1-flash-lite",
   });
 
   const aiPrompt = `
