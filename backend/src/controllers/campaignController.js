@@ -21,7 +21,7 @@ const createCampaign = async (req, res) => {
     campaigns.push(campaign);
 
     await axios.post(
-      "http://localhost:6000/send",
+      "https://reachiq-channel.onrender.com/send",
       campaign
     );
 

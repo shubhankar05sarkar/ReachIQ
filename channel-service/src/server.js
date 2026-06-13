@@ -10,7 +10,7 @@ app.use(express.json());
 const sendEvent = async (campaignId, status) => {
   try {
     await axios.post(
-      "http://localhost:5000/api/events",
+      "https://reachiq-backend-6r8b.onrender.com/api/events",
       {
         campaignId,
         status,
@@ -97,8 +97,10 @@ app.post("/send", async (req, res) => {
   }, 9000);
 });
 
-app.listen(6000, () => {
+const PORT = process.env.PORT || 6000;
+
+app.listen(PORT, () => {
   console.log(
-    "Channel Service running on port 6000"
+    `Channel Service running on port ${PORT}`
   );
 });
