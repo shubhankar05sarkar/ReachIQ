@@ -4,6 +4,12 @@ An AI-powered Customer Relationship Management (CRM) platform that helps busines
 
 ---
 
+## Live Demo
+
+[ReachIQ](https://reachiq-frontend.onrender.com)
+
+---
+
 ## Features
 
 * Customer management dashboard
